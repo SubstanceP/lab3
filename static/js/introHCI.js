@@ -34,7 +34,10 @@ function projectClick(e) {
     var description = $(containingProject).find(".project-description");
     if (description.length == 0) {
        $(containingProject).append("<div class='project-description'><p>Description of the project.</p></div>");
+       $(containingProject).append("<div class='stop-that' style='display:none; font-size:30px;'><p>Stop That</p></div>");
+
     } else {
        $(".project-description").hide();
+       $(".stop-that").fadeIn();
     }
 }
