@@ -10,9 +10,13 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$("#testjs").click(function(e) {
-		$('.jumbotron h1').text("Javascript is has tekn control");
-		$("#testjs").text("Please wait...");
-		$(".jumbotron p").addClass("active");
+        $('#testjs').click(function(e) {
+            $('.jumbotron h1').text("Javascript is connected");
+            });
+            $("a.thumbnail").click(projectClick);
+		    $('.jumbotron h1').text("Javascript has has taken control");
+		    $("#testjs").text("Please wait...");
+		    $(".jumbotron p").addClass("active");
 
 	});
 
